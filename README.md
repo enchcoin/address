@@ -39,6 +39,18 @@ func main(){
 }
 ```
 
+## Note
+
+In [NEM Technical Reference](https://www.nem.io/NEM_techRef.pdf):
+```
+3    Cryptography
+
+For the hash function H mentioned in the paper,  NEM uses the 512 bit SHA3 hash
+function.
+```
+
+But in fact, H is Keccak-512, not SHA3-512. And Golang doens't have
+Keccak-512 as default and in golang.org/x/crypto. It annoyed me too much :anger:
 
 # Contribution
 Improvements to the codebase and pull requests are encouraged.
