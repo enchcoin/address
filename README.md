@@ -9,6 +9,9 @@
 
 This  library is for handling NEM address, including generate private keys, sign/vefiry and serializing.
 
+This library passes all of [official test vectors for keys](https://github.com/NemProject/nem-test-vectors/blob/master/1.test-keys.js) 
+and [test vectors for signs](https://github.com/NemProject/nem-test-vectors/blob/master/2.test-sign.dat).
+
 ## Requirements
 
 This requires
@@ -50,7 +53,7 @@ function.
 ```
 
 But in fact, H is Keccak-512, not SHA3-512. And Golang doens't have
-Keccak-512 as default and in golang.org/x/crypto. It annoyed me too much :anger:
+Keccak-512 as default and in golang.org/x/crypto. It annoyed me too much :facepunch:
 
 # Contribution
 Improvements to the codebase and pull requests are encouraged.
